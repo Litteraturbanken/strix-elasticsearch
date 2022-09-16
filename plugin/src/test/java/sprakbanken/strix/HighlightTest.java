@@ -1,5 +1,5 @@
 package sprakbanken.strix;
-
+/**
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.common.Priority;
 import org.elasticsearch.common.text.Text;
@@ -166,3 +166,4 @@ public class HighlightTest extends ESIntegTestCase {
         return analysis.endObject().endObject().endObject();
     }
 }
+**/

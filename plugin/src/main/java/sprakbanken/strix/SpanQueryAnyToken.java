@@ -4,12 +4,12 @@ import org.apache.lucene.index.LeafReaderContext;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.index.TermStates;
 import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.QueryVisitor;
 import org.apache.lucene.search.ScoreMode;
-import org.apache.lucene.search.spans.*;
+import org.apache.lucene.queries.spans.*;
 
 import java.io.IOException;
 import java.util.Map;
-import java.util.Set;
 
 public class SpanQueryAnyToken extends SpanQuery {
 
@@ -53,16 +53,13 @@ public class SpanQueryAnyToken extends SpanQuery {
         }
 
         @Override
-        public void extractTerms(Set<Term> terms) {
-
-        }
-
-        @Override
         public boolean isCacheable(LeafReaderContext ctx) {
             return true;
         }
 
     }
+
+    public void visit(QueryVisitor visitor) {  }
 
     @Override
     public boolean equals(Object other) {

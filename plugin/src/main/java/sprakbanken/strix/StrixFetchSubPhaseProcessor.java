@@ -2,16 +2,16 @@ package sprakbanken.strix;
 
 import org.apache.lucene.index.LeafReaderContext;
 import org.apache.lucene.search.*;
-import org.apache.lucene.search.spans.SpanQuery;
-import org.apache.lucene.search.spans.SpanWeight;
-import org.apache.lucene.search.spans.Spans;
-import org.elasticsearch.common.text.Text;
-import org.elasticsearch.search.fetch.FetchContext;
-import org.elasticsearch.search.fetch.FetchSubPhase;
-import org.elasticsearch.search.fetch.FetchSubPhaseProcessor;
-import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
-import org.elasticsearch.search.fetch.subphase.highlight.SearchHighlightContext;
-import org.elasticsearch.search.internal.SearchContext;
+import org.apache.lucene.queries.spans.SpanQuery;
+import org.apache.lucene.queries.spans.SpanWeight;
+import org.apache.lucene.queries.spans.Spans;
+import org.opensearch.common.text.Text;
+import org.opensearch.search.fetch.FetchContext;
+import org.opensearch.search.fetch.FetchSubPhase;
+import org.opensearch.search.fetch.FetchSubPhaseProcessor;
+import org.opensearch.search.fetch.subphase.highlight.HighlightField;
+import org.opensearch.search.fetch.subphase.highlight.SearchHighlightContext;
+import org.opensearch.search.internal.SearchContext;
 
 import java.io.IOException;
 import java.util.*;

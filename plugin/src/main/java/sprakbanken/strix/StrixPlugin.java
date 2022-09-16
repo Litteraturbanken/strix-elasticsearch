@@ -1,12 +1,12 @@
 package sprakbanken.strix;
 
-import org.elasticsearch.index.analysis.TokenFilterFactory;
-import org.elasticsearch.index.query.QueryParser;
-import org.elasticsearch.indices.analysis.AnalysisModule.AnalysisProvider;
-import org.elasticsearch.plugins.AnalysisPlugin;
-import org.elasticsearch.plugins.Plugin;
-import org.elasticsearch.plugins.SearchPlugin;
-import org.elasticsearch.search.fetch.FetchSubPhase;
+import org.opensearch.index.analysis.TokenFilterFactory;
+import org.opensearch.index.query.QueryParser;
+import org.opensearch.indices.analysis.AnalysisModule.AnalysisProvider;
+import org.opensearch.plugins.AnalysisPlugin;
+import org.opensearch.plugins.Plugin;
+import org.opensearch.plugins.SearchPlugin;
+import org.opensearch.search.fetch.FetchSubPhase;
 
 import java.util.Collections;
 import java.util.List;
